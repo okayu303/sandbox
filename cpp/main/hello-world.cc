@@ -1,5 +1,5 @@
-#include "cpp/lib/hello-time.h"
-#include "cpp/main/hello-greet.h"
+#include "lib/hello-time.h"
+#include "main/hello-greet.h"
 #include <iostream>
 #include <string>
 

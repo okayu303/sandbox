@@ -1,4 +1,4 @@
-#include "cpp/lib/hello-time.h"
+#include "lib/hello-time.h"
 #include <ctime>
 #include <iostream>
 
