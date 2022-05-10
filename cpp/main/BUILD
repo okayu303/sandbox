@@ -4,6 +4,7 @@ cc_binary(
     name = "hello_world",
     srcs = ["hello_world.cpp"],
     deps = [
+        "//cpp/lib:color",
         "//cpp/lib:greet",
         "//cpp/lib:time",
     ],

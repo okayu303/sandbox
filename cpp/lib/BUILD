@@ -1,6 +1,18 @@
 load("@rules_cc//cc:defs.bzl", "cc_library")
 
 cc_library(
+    name = "color",
+    srcs = select({
+        "//:red": ["color/red.cpp"],
+        "//conditions:default": ["color/blue.cpp"],
+    }),
+    hdrs = ["color/color.hpp"],
+    strip_include_prefix = "color",
+    include_prefix = "lib",
+    visibility = ["//cpp/main:__pkg__"],
+)
+
+cc_library(
     name = "greet",
     srcs = ["greet/hello_greet.cpp"],
     hdrs = ["greet/hello_greet.hpp"],
